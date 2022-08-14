@@ -1,0 +1,29 @@
+.button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  border: 1px solid #163f2c;
+  color: #163f2c;
+  padding: 20px 15px;
+  font-weight: 500;
+  background-color: white;
+  cursor: pointer;
+  user-select: none;
+
+  &__invisible {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover {
+    color: white;
+    background-color: #163f2c;
+  }
+
+  transition: all 0.1s ease-in-out;
+}

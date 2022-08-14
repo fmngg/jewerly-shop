@@ -1,0 +1,71 @@
+.card {
+  width: 400px;
+  height: 600px;
+  position: relative;
+
+  .cardC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 500px;
+    width: 400px;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  svg {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+
+    &:hover {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  h1 {
+    margin: 10px 0px 10px;
+    font-family: 'Libre Franklin';
+    color: #163f2c;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  p {
+    color: #163f2c;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .button {
+    width: 350px;
+    position: absolute;
+    bottom: 130px;
+    left: 25px;
+    text-align: center;
+    padding: 15px 50px;
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(30px);
+    background: rgba(36, 41, 52, 0.25);
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    .button {
+      opacity: 1;
+    }
+  }
+}

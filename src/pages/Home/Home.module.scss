@@ -1,0 +1,145 @@
+.home {
+  background-image: url("../../assets/img/home-background-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .image {
+    position: relative;
+    background-image: url("../../assets/img/home-background-2.png");
+    width: 1090px;
+    height: 790px;
+    display: block;
+    margin: 0px auto;
+
+    &__button {
+      position: absolute;
+      border: 1px solid white;
+      padding: 15px;
+      bottom: 0;
+      margin: 200px 50px;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        backdrop-filter: blur(15px);
+        box-shadow: 0 0 1px 1px white inset;
+      }
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    &__bottomText {
+      position: absolute;
+      bottom: 0;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 110px;
+      margin-left: 70px;
+
+      text-align: center;
+
+      color: #fbfbfb;
+    }
+  }
+
+  .content {
+    padding: 35px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      margin-bottom: 50px;
+      h1 {
+        font-family: "Libre Franklin", sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        color: #163f2c;
+      }
+
+      p {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 24px;
+        color: #738c80;
+      }
+    }
+
+    // .collection1 {
+    //   justify-content: space-between;
+    //   display: flex;
+    //   flex-direction: column-reverse;
+    //   // background-image: url("../../assets/img/collection-1.png");
+
+    //   background-size: cover;
+
+    //   .img {
+    //     margin-bottom: 30px;
+
+    //     height: 500px;
+    //     width: 500px;
+    //     position: relative;
+    //   }
+
+    //   .design {
+    //     position: absolute;
+    // h1 {
+    //   font-family: "Libre Franklin", sans-serif;
+    //   margin: 15px;
+    //   color: white;
+    // }
+
+    // &:hover {
+    //   .collectionButton {
+    //     opacity: 1;
+    //   }
+    // }
+    //   }
+    // }
+    // .collection2 {
+    //   justify-content: space-between;
+    //   display: flex;
+    //   flex-direction: column-reverse;
+    //   background-image: url("../../assets/img/collection-2.png");
+    //   background-size: cover;
+    //   height: 500px;
+    //   width: 500px;
+    //   margin-bottom: 30px;
+
+    //   h1 {
+    //     font-family: "Libre Franklin", sans-serif;
+    //     margin: 15px;
+    //     color: white;
+    //   }
+
+    //   &:hover {
+    //     .collectionButton {
+    //       opacity: 1;
+    //     }
+    //   }
+    // }
+    // .collection3 {
+    //   justify-content: space-between;
+    //   display: flex;
+    //   flex-direction: column-reverse;
+    //   background-image: url("../../assets/img/collection-3.png");
+    //   background-size: cover;
+    //   height: 500px;
+    //   width: 500px;
+    //   margin-bottom: 30px;
+
+    //   &:hover {
+    //     .collectionButton {
+    //       opacity: 1;
+    //     }
+    //   }
+
+    //   h1 {
+    //     font-family: "Libre Franklin", sans-serif;
+    //     margin: 15px;
+    //     color: white;
+    //   }
+    // }
+  }
+}

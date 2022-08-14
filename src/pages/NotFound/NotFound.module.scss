@@ -1,0 +1,54 @@
+.body {
+  overflow: hidden;
+  display: flex;
+
+  img {
+    height: 100vh;
+  }
+
+  .right {
+    width: 100%;
+
+    .button {
+      position: relative;
+      margin: 40px;
+      margin-bottom: 100px;
+      font-weight: 600;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: #163f2c;
+      }
+
+      svg {
+        position: absolute;
+        left: -25px;
+        top: 4px;
+
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          transform: translateX(-3px);
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-family: "Libre Franklin", sans-serif;
+        color: #163f2c;
+        font-weight: 800;
+      }
+      p {
+        font-family: "Libre Franklin", sans-serif;
+        color: #163f2c;
+        font-weight: 400;
+      }
+    }
+  }
+}

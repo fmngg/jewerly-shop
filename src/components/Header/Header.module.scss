@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 35px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__left {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    h1 {
+      font-family: "Libre Franklin", sans-serif;
+      font-weight: 300;
+    }
+
+    li {
+      cursor: pointer;
+      margin: 0px 10px;
+
+      .active {
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white,
+          0 0 40px white;
+        font-weight: 500;
+      }
+
+      &:hover {
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white,
+          0 0 40px white;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__center {
+    position: absolute;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    top: 40px;
+  }
+
+  &__right {
+    text-align: right;
+    align-items: center;
+    display: flex;
+
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      cursor: pointer;
+      margin: 0px 10px;
+    }
+  }
+}

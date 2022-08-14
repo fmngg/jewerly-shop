@@ -1,0 +1,33 @@
+.categories {
+  ul {
+    display: flex;
+
+    li {
+      border: 1px solid #163f2c;
+      color: #163f2c;
+      padding: 15px 20px;
+      width: 100px;
+      text-align: center;
+      margin-right: 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background-color: #163f2c;
+        font-weight: 500;
+      }
+
+      &:active {
+        color: white;
+        background-color: #143626;
+        font-weight: 500;
+      }
+    }
+
+    .active {
+      color: white;
+      background-color: #163f2c;
+      font-weight: 500;
+    }
+  }
+}

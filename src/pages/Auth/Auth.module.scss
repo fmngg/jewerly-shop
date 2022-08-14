@@ -1,0 +1,132 @@
+.body {
+  overflow: hidden;
+  display: flex;
+
+  a {
+    text-decoration: none;
+    color: #163f2c;
+  }
+
+  // img {
+  //   height: 100vh;
+  // }
+
+  .img {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .right {
+    width: 100%;
+
+    .button {
+      position: relative;
+      margin: 40px;
+      margin-bottom: 100px;
+      font-weight: 600;
+      cursor: pointer;
+
+      svg {
+        position: absolute;
+        left: -25px;
+        top: 4px;
+
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          transform: translateX(-3px);
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      padding: 0px 200px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-family: 'Libre Franklin', sans-serif;
+        color: #163f2c;
+        font-weight: 800;
+        margin-bottom: 50px;
+      }
+
+      input {
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #163f2c;
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
+      .password {
+        position: relative;
+        input {
+          width: 100%;
+        }
+
+        svg {
+          cursor: pointer;
+          right: 15px;
+          top: 13px;
+          position: absolute;
+
+          &:hover {
+            path {
+              stroke: dimgray;
+            }
+          }
+
+          &:active {
+            path {
+              stroke: black;
+            }
+          }
+        }
+      }
+
+      button {
+        cursor: pointer;
+        margin-top: 50px;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #163f2c;
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 25px;
+        background-color: #163f2c;
+        color: white;
+        font-weight: 400;
+      }
+
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+        color: #163f2c;
+      }
+
+      p {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        color: #163f2c;
+      }
+      //   p {
+      //     font-family: "Libre Franklin", sans-serif;
+      //     color: #163f2c;
+      //     font-weight: 400;
+      //   }
+    }
+  }
+}

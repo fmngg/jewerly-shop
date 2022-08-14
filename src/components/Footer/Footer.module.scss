@@ -1,0 +1,76 @@
+.footer {
+  background-color: #efffc1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  color: #163f2c;
+
+  a {
+    text-decoration: none;
+    color: #163f2c;
+  }
+
+  h1 {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+  }
+
+  &__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      &__input {
+        input {
+          align-items: center;
+          width: 390px;
+          padding: 15px;
+          border: 1px solid #163f2c;
+          background-color: #d0f561;
+          font-weight: 300;
+          font-size: 16px;
+        }
+
+        svg {
+          position: absolute;
+          right: 15px;
+          top: 20px;
+          cursor: pointer;
+        }
+      }
+
+      &__list {
+        display: flex;
+        margin-top: 20px;
+
+        svg {
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__left {
+      display: flex;
+
+      ul {
+        margin: 50px 50px 50px 0px;
+
+        li {
+          cursor: pointer;
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
